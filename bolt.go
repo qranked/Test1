@@ -6,7 +6,7 @@ import (
 
 	"github.com/boltdb/bolt"
 )
-
+ 
 func initBoltdb(path string, mode os.FileMode) (*bolt.DB, error) {
 	db, err := bolt.Open("main.db", 0600, nil)
 	if err != nil {
